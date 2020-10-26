@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Grandstander', cursive;
+}
+
+header .navbar{
+    background-color: grey;
+    padding: 0;
+}
+
+header .navbar button{
+    margin-right: 20px;
+}
+
+header .navbar .navbar-brand{
+    font-size: 2em;
+    font-weight: 500;
+    padding-left: 50px;
+    color: #000;
+}
+
+
+header .navbar .navbar-collapse li a{
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 2px solid #000 ;
+}
+
+main .menu .container{
+    padding: 0;
+}
+
+main .menu .container h1{
+    margin: 0;
+    padding: 25px 0;
+    font-size: 2em;
+}
+
+main .menu .container  .row .col-md-4{
+    background: grey;
+    margin: 10px;
+    max-width: 30%;
+}
+
+
+main .menu .container .row .col-md-4 h2{
+    padding-top: 5px;
+}
+
+
+
+main .menu .container  .row h2{
+    text-align: center;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+/* === media starts ==== */
+
+@media (min-width:992px){
+    header  .navbar .collapse .nav-item{
+        visibility: hidden;
+    }
+}
+
+
+@media (max-width:772px){
+    main .menu .container  .row .col-sm-6{
+        min-width: 45%;
+    }
+    
+    
+    main .menu .container  .row .col-sm-12{
+        min-width: 94%;
+    }
+}
+
+@media (max-width:576px){
+    main .menu .container  .row .col-xs-12{
+        min-width: 90%;
+    }
+
+    main .menu .container  .row{
+        margin-left: 10px;
+    }
+}
